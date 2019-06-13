@@ -32,6 +32,13 @@ function addNewLiOnClick(){
 }
 
 function clearEmployeeListOnLinkClick(){
+  document.querySelector('a').addEventListener("click", function(){
+   let list = document.getElementsByClassName('employee-list')[0]
+   // while (list.firstElementChild){
+   //   list.removeChild(list.firstElementChild)
+   // }
+   list.innerHTML = ''
+ });
   // let li = document.querySelector('li')
   // let button = document.querySelector('a')
   // button.addEventListener('click' function(e){
