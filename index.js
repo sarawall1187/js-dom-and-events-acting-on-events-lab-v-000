@@ -20,9 +20,12 @@ function addNewElementAsLi(){
 }
 
 function addNewLiOnClick(){
-   const input = document.querySelector('input');
-   input.addEventListener('click', function(e) {
-     console.log(input) }
+  let button = document.querySelector('input[value="Add Employee"]')
+  button.addEventListener("click", addNewElementAsLi());
+  document.querySelector('form').reset()
+  //  const input = document.querySelector('input');
+  //  input.addEventListener('click', function(e) {
+  //    console.log(input) }
   //     return input.addNewElementAsLi();
   //     return input.value = '';
   //  })
